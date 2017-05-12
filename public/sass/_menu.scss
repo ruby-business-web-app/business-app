@@ -9,10 +9,28 @@ body{
 }
 
 .menu-item{
-	margin: 0 auto;
+	margin: 2px auto;
 	height: 400px;
 	width: 250px;
 	background-size: cover;
+	transition: all 1s;
+	&:hover{
+		animation: enlarge 1s;
+	}
+}
+
+// .menu-item:hover{
+// 	animation: enlarge 1s;
+// }
+
+@keyframes enlarge {
+	height: 600px;
+	width: 375px;
+}
+
+.menu-item-enlarged{
+	height: 600px;
+	width: 250px;
 }
 
 .menu-item1{
