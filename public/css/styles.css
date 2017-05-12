@@ -6,21 +6,23 @@ body {
   flex-wrap: wrap;
   justify-content: center; }
 
+.menu-container {
+  margin: 0 auto; }
+
 .menu-item {
-  margin: 2px auto;
   height: 400px;
   width: 250px;
-  background-size: cover;
-  transition: all 1s; }
-  .menu-item:hover {
-    animation: enlarge 1s; }
+  background-size: cover; }
 
-@keyframes enlarge {
-  height: 600px;
-  width: 375px; }
-.menu-item-enlarged {
-  height: 600px;
-  width: 250px; }
+.menu-item-container {
+  margin: 2px auto; }
+
+.menu-item-overlay {
+  background-color: lightgrey;
+  opacity: 0.8; }
+
+.menu-item-title {
+  margin: 0; }
 
 .menu-item1 {
   background-image: url("/images/mussels.jpg"); }
