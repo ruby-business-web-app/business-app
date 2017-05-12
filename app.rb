@@ -1,6 +1,5 @@
-require 'rubygems'
 require 'sinatra'
 
-get '/index' do
-	File.read('index.html')
+get '/' do
+	erb :index
 end
