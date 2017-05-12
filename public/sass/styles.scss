@@ -2,9 +2,19 @@
 @import "variables";
 @import "header";
 @import 'menu';
+@import 'footer';
 
 body {
 	background-color: $page-bg;
 	padding: 0;
 	margin: 0;
+}
+
+a {
+	color: $link-reg;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $link-hover;
 }

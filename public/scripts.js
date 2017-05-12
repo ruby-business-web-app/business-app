@@ -9,9 +9,9 @@ menuItemContainers = document.getElementsByClassName("menu-item-container");
 
 Array.prototype.forEach.call(menuItemContainers, function(photo){
 	photo.addEventListener("mouseenter", function(){
-		photo.classList.toggle("menu-item-overlay");
+		photo.classList.add("menu-item-overlay");
 	})
 	photo.addEventListener("mouseleave", function(){
-		photo.classList.toggle("menu-item-overlay");
+		photo.classList.remove("menu-item-overlay");
 	})
 })
