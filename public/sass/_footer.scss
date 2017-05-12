@@ -1,0 +1,30 @@
+.footer {
+	font-family: sans-serif;
+	text-align: center;
+	border-top: 3px solid black;
+	margin-bottom: 15px;
+}
+
+.ftinfo-box {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.footer-title {
+	font-family: $subtitle;
+}
+
+.footer-info {
+	font-variant: small-caps;
+	font-size: 10px;
+}
+
+.footer-punch {
+	font-style: italic;
+	font-family: $sans;
+	font-size: 13px;
+}
+
+.ft-breaker, .ftinfo-box {
+	display: inline-block;
+}
