@@ -1,0 +1,53 @@
+body{
+	background-color: brown;
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.menu-item{
+	margin: 2px auto;
+	height: 400px;
+	width: 250px;
+	background-size: cover;
+	transition: all 1s;
+	&:hover{
+		animation: enlarge 1s;
+	}
+}
+
+// .menu-item:hover{
+// 	animation: enlarge 1s;
+// }
+
+@keyframes enlarge {
+	height: 600px;
+	width: 375px;
+}
+
+.menu-item-enlarged{
+	height: 600px;
+	width: 250px;
+}
+
+.menu-item1{
+	background-image: url('/images/mussels.jpg');
+}
+.menu-item2{
+	background-image: url('/images/lasagna.jpg');
+}
+.menu-item3{
+	background-image: url('/images/crostini.jpg');
+}
+.menu-item4{
+	background-image: url('/images/antipasto.jpg');
+}
+.menu-item5{
+	background-image: url('/images/ravioli.jpg');
+}
+.menu-item6{
+	background-image: url('/images/seafood.jpg');
+}

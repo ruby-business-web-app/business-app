@@ -1,0 +1,55 @@
+.hero, .index-hero {
+	background-image: url("/images/header.jpeg");
+	background-size: 100%;
+	background-position: bottom;
+}
+
+.hero {
+	height: 100px;
+	padding-bottom: 20px;
+}
+
+.index-hero {
+	height: 220px;
+}
+
+.hero h1, .index-hero h1 {
+	font-family: $handwrit;
+	font-weight: normal;
+	font-size: 75px;
+	margin: 0;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.hero, .index-hero, .navigation {
+	color: white;
+	text-align: center;
+}
+
+.navigation {
+	background-color: $main-blue;
+	font-family: $sans;
+	padding: 10px 15px 5px 15px;
+	font-size: 20px;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: white;
+}
+
+.navigation a:hover {
+	color: $link-hover;
+}
+
+.navigation ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.navigation li {
+	display: inline;
+	margin: 0 10px;
+}
