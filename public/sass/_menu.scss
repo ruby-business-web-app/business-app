@@ -1,3 +1,7 @@
+body{
+	background-color: brown;
+}
+
 .flex{
 	display: flex;
 	flex-wrap: wrap;
@@ -12,20 +16,20 @@
 }
 
 .menu-item1{
-	background-image: url('');
+	background-image: url('/images/mussels.jpg');
 }
 .menu-item2{
-	background-image: url('');
+	background-image: url('/images/lasagna.jpg');
 }
 .menu-item3{
-	background-image: url('');
+	background-image: url('/images/crostini.jpg');
 }
 .menu-item4{
-	background-image: url('');
+	background-image: url('/images/antipasto.jpg');
 }
 .menu-item5{
-	background-image: url('');
+	background-image: url('/images/ravioli.jpg');
 }
 .menu-item6{
-	background-image: url('');
+	background-image: url('/images/seafood.jpg');
 }
