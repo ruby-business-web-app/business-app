@@ -1,9 +1,8 @@
-
-
 @import 'photopage';
 @import "variables";
 @import "header";
 @import 'menu';
+@import 'footer';
 
 body {
 	background-color: $page-bg;
@@ -11,3 +10,11 @@ body {
 	margin: 0;
 }
 
+a {
+	color: $link-reg;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $link-hover;
+}

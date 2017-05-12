@@ -1,14 +1,4 @@
-body {
-
-	margin: 0 auto;
-	background: linear-gradient(312deg, #3fd0fb, #37bde4, #2b93b2, #185c70);
-	background-size: 800% 800%;
-
--webkit-animation: AnimationName 47s ease infinite;
--moz-animation: AnimationName 47s ease infinite;
-animation: AnimationName 47s ease infinite;
-
-}
+@import "variables";
 
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
@@ -32,20 +22,19 @@ animation: AnimationName 47s ease infinite;
 }
 
 	.gal-title{
-		font-family: 'Baloo', cursive;
+		font-family: $subtitle;
 		font-size: 42px;
 		padding: 20px;
 
 	}	
 	.gal-border-of-content{
-		border: 3px solid grey;
+
 		padding: 20px;
-		background-color: lightgrey;
 	}
 
 .outerdiv{
-	height: 40%;
-	width: 40%;
+	height: 25%;
+	width: 25%;
 	min-width: 100px;
 	min-height: 100px;
 	display: inline-block;

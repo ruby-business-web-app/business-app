@@ -6,6 +6,7 @@ get '/layout' do
 end
 
 get '/photopage' do 
+	@heading = "hero"
 	erb :photopage
 end
 
@@ -17,11 +18,6 @@ end
 get '/menu' do
 	@heading = "hero"
 	erb :menu
-end
-
-get '/photopage' do
-	@heading = "hero"
-	erb :photopage
 end
 
 get '/contact' do
