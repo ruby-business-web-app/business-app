@@ -7,8 +7,8 @@ end
 
 get '/photopage' do 
 	erb :photopage
+end
 
 get '/' do
 	erb :index
-
 end
