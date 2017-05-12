@@ -8,8 +8,6 @@ body {
 -moz-animation: AnimationName 47s ease infinite;
 animation: AnimationName 47s ease infinite;
 
-text-align: center;
-
 }
 
 @-webkit-keyframes AnimationName {
@@ -28,27 +26,48 @@ text-align: center;
     100%{background-position:0% 50%}
 }
 
-.gal-main-image-content{
-	height: 100%;
-	width: 100%;
+.gal-main-image-container{
 	text-align: center;
+	margin: 10px;
 }
 
 	.gal-title{
 		font-family: 'Baloo', cursive;
+		font-size: 42px;
+		padding: 20px;
+
 	}	
 	.gal-border-of-content{
-		text-align: center;
+		border: 3px solid grey;
+		padding: 20px;
+		background-color: lightgrey;
 	}
 
-.galimage{
-	height: 45%;
-	width: 45%;
+.outerdiv{
+	height: 40%;
+	width: 40%;
 	min-width: 100px;
 	min-height: 100px;
-	display: inline-flex;
+	display: inline-block;
+	position: relative;
+}
+
+.galimage{
+	height: 100%;
+	width: 100%;
 	background-size: 100% 100%;
 	border-radius: 5%;
+	transition: all 1s;
+	top: 0px;
+	left: 0px;
+	&:hover{
+		position: absolute;
+		z-index: 1;
+		height: 150%;
+		width: 150%;
+		top: -60px;
+		left: -125px;
+	}
 }
 
 .firstimage{
