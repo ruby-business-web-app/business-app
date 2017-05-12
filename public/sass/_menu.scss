@@ -5,7 +5,7 @@ body{
 .flex{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .menu-container{
@@ -20,15 +20,26 @@ body{
 
 .menu-item-container{
 	margin: 2px auto;
+	transition: all 1s;
 }
 
 .menu-item-overlay{
 	background-color: lightgrey;
 	opacity: 0.8;
+	box-shadow: 10px 20px 25px 0 black;
 }
 
-.menu-item-title{
+.menu-item-text{
+	text-align: center;
+}
+.menu-item-text p{
 	margin: 0;
+	font-size: 28px;
+	position: relative;
+	top: 160px;
+	text-shadow: 2px 2px white;
+
+
 }
 
 .menu-item1{
