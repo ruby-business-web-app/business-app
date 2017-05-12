@@ -1,24 +1,54 @@
 body {
-	background-color: red;
+
 	margin: 0 auto;
+	background: linear-gradient(312deg, #3fd0fb, #37bde4, #2b93b2, #185c70);
+	background-size: 800% 800%;
+
+-webkit-animation: AnimationName 47s ease infinite;
+-moz-animation: AnimationName 47s ease infinite;
+animation: AnimationName 47s ease infinite;
+
+text-align: center;
+
 }
 
-.main-image-content{
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.gal-main-image-content{
 	height: 100%;
 	width: 100%;
-	.title{
+	text-align: center;
+}
 
+	.gal-title{
+		font-family: 'Baloo', cursive;
+	}	
+	.gal-border-of-content{
+		text-align: center;
 	}
-	.border-of-content{
-		
 
-
-		.image{
-				
-
-
-		}
-	}
+.galimage{
+	height: 45%;
+	width: 45%;
+	min-width: 100px;
+	min-height: 100px;
+	display: inline-flex;
+	background-size: 100% 100%;
+	border-radius: 5%;
 }
 
 .firstimage{
@@ -37,14 +67,11 @@ body {
 	background-image: url('http://iloverustico.com/wp-content/uploads/2014/05/pizza-food-image.jpg');
 }
 .sixthimage{
-	background-image: url('');
+	background-image: url('http://www.masralarabia.com/images/news/4eeec976a0820d2157e2793818914dbb.jpg');
 }
 .seventhimage{
-	background-image: url('');
+	background-image: url('https://images.food52.com/aaCL5BEpM-qvWWBBK4tki6mnmsw=/fit-in/1200x1200/bd467b9d-f8bb-42d6-a766-d2b5b419756b--Headley_Brooks_e_Yunhee_Kim_For_Blads.jpg');
 }
 .eigthimage{
-	background-image: url('');
-}
-.ninethimage{
-	background-image: url('');
+	background-image: url('http://mainewoodheat.com/cms/wp-content/uploads/2011/06/lobster_pizza2.jpg');
 }
