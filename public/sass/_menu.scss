@@ -13,6 +13,7 @@ body{
 }
 
 .menu-item{
+	margin: 10px;
 	height: 400px;
 	width: 300px;
 	background-size: cover;
@@ -28,28 +29,18 @@ body{
 	box-shadow: 10px 20px 25px 0 black;	
 }
 
-// .menu-item-text{
-// 	text-align: center;
-// }
-
-// .menu-item-text h3{
-// 	margin: 0;
-// 	font-size: 28px;
-// 	position: relative;
-// 	top: 130px;
-// 	text-shadow: 2px 2px white;
-// }
-
 .menu-item-text-div{
 	background-color: lightgrey;
 	opacity: 0.7;
-	height: 400px;
+	padding: 15px;
+	height: 370px;
+	text-align: center;
 }
 
 .menu-item-text{
 	font-size: 18px;
 	position: relative;
-	top: 160px;
+	top: 130px;
 	text-shadow: 1px 1px white;
 }
 
@@ -57,7 +48,7 @@ body{
 	position: relative;
 	margin: 0;
 	font-size: 28px;
-	top: 130px;
+	top: 100px;
 	text-shadow: 2px 2px white;
 }
 
@@ -67,16 +58,21 @@ body{
 }
 .menu-item2{
 	background-image: url('/images/lasagna.jpg');
+	background-position-x: -50px;
 }
 .menu-item3{
 	background-image: url('/images/crostini.jpg');
+	background-position-x: -93px;
+
 }
 .menu-item4{
 	background-image: url('/images/antipasto.jpg');
+	background-position-x: -60px;
 }
 .menu-item5{
 	background-image: url('/images/ravioli.jpg');
 }
 .menu-item6{
 	background-image: url('/images/seafood.jpg');
+	background-position-x: -62px;
 }

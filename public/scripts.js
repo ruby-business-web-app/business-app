@@ -19,6 +19,6 @@ Array.prototype.forEach.call(menuItems, function(item, index){
 		menuItemTextDivs[index].style.display = "none";
 	});
 	item.addEventListener("mouseleave", function(){
-		setTimeout(menuItemTextDivs[index].style.display = "block", 1000);
+		setTimeout(function(){ menuItemTextDivs[index].style.display = "block"}, 1000);
 	});
 })
