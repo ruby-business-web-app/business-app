@@ -16,7 +16,7 @@ Array.prototype.forEach.call(menuItems, function(photo){
 
 Array.prototype.forEach.call(menuItems, function(item, index){
 	menuItemTextDivs[index].addEventListener("mouseenter", function(){
-		menuItemTextDivs[index].style.display = "none";
+		setTimeout(function(){menuItemTextDivs[index].style.display = "none"}, 1000);
 	});
 	item.addEventListener("mouseleave", function(){
 		setTimeout(function(){ menuItemTextDivs[index].style.display = "block"}, 1000);
