@@ -14,33 +14,52 @@ body{
 
 .menu-item{
 	height: 400px;
-	width: 250px;
+	width: 300px;
 	background-size: cover;
+	transition: all 1s;
 }
 
 .menu-item-container{
 	margin: 2px auto;
-	transition: all 1s;
+	// transition: all 1s;
 }
 
 .menu-item-overlay{
 	background-color: lightgrey;
-	opacity: 0.8;
-	box-shadow: 10px 20px 25px 0 black;
+	opacity: 0.4;
 }
+
+.menu-item-shadow{
+	box-shadow: 10px 20px 25px 0 black;	
+}
+
+// .menu-item-text{
+// 	text-align: center;
+// }
+
+// .menu-item-text h3{
+// 	margin: 0;
+// 	font-size: 28px;
+// 	position: relative;
+// 	top: 130px;
+// 	text-shadow: 2px 2px white;
+// }
 
 .menu-item-text{
-	text-align: center;
-}
-.menu-item-text p{
-	margin: 0;
-	font-size: 28px;
+	font-size: 18px;
 	position: relative;
 	top: 160px;
-	text-shadow: 2px 2px white;
-
-
+	text-shadow: 1px 1px white;
 }
+
+.menu-item-title{
+	position: relative;
+	margin: 0;
+	font-size: 28px;
+	top: 130px;
+	text-shadow: 2px 2px white;
+}
+
 
 .menu-item1{
 	background-image: url('/images/mussels.jpg');
