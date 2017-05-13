@@ -18,3 +18,15 @@ a {
 a:hover {
 	color: $link-hover;
 }
+
+.withsmall {
+	margin-top: 100px;
+}
+
+.withbig {
+	margin-top: 300px;
+}
+
+.withsmall, .withbig {
+	background-color: $page-bg;
+}
