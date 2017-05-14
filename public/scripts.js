@@ -1,7 +1,7 @@
-menuItemContainers = document.getElementsByClassName("menu-item-container");
+// menuItemContainers = document.getElementsByClassName("menu-item-container");
+// menuItemTitles = document.getElementsByClassName("menu-item-title");
+// menuItemTexts = document.getElementsByClassName("menu-item-text");
 menuItems = document.getElementsByClassName("menu-item");
-menuItemTitles = document.getElementsByClassName("menu-item-title");
-menuItemTexts = document.getElementsByClassName("menu-item-text");
 menuItemTextDivs = document.getElementsByClassName("menu-item-text-div");
 
 
@@ -16,9 +16,9 @@ Array.prototype.forEach.call(menuItems, function(photo){
 
 Array.prototype.forEach.call(menuItems, function(item, index){
 	menuItemTextDivs[index].addEventListener("mouseenter", function(){
-		setTimeout(function(){menuItemTextDivs[index].style.display = "none"}, 1000);
+		setTimeout(function(){menuItemTextDivs[index].style.display = "none"}, 800);
 	});
 	item.addEventListener("mouseleave", function(){
-		setTimeout(function(){ menuItemTextDivs[index].style.display = "block"}, 1000);
+		setTimeout(function(){ menuItemTextDivs[index].style.display = "block"}, 800);
 	});
 })
