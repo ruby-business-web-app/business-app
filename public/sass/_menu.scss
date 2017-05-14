@@ -24,8 +24,18 @@ body{
 	justify-content: center;
 }
 .menu-type{
-	margin: 0 20px;
-	height: 40px;
+	padding: 8px;
+}
+.menu-section-title{
+	font-size: 35px;
+	margin: 0;
+}
+.menu-section-links{
+	font-size: 20px;
+	margin-top: 10px;
+}
+.menu-type-container a{
+	height: 50px;
 }
 
 .menu-item{
@@ -38,7 +48,7 @@ body{
 
 .menu-item-container{
 	margin: 2px auto;
-	transition: all 1s;
+	// transition: all 1s;
 }
 
 .menu-item-shadow{
