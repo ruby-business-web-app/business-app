@@ -1,0 +1,1 @@
+export SENDGRID_API_KEY="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"

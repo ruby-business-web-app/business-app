@@ -25,7 +25,9 @@
 			</ul>
 		</div>
 
+	<div id="pageHolder">
 	<%= yield %>
+	</div>
 
 	</div>
 
@@ -42,5 +44,6 @@
 	</div>
 
 	<script type="text/javascript" src="scripts.js"></script>
+	<script type="text/javascript" src="<%= "#{@nav_script_type}" %>"></script>
 </body>
 </html>
