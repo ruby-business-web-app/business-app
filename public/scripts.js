@@ -1,17 +1,15 @@
-menuItemContainers = document.getElementsByClassName("menu-item-container");
+menuItems = document.getElementsByClassName("menu-item");
+menuItemTextDivs = document.getElementsByClassName("menu-item-text-div");
 
 
-// [].forEach.call(menuPhotos, function(photo){
-// 	photo.addEventListener("hover", function(){
-// 		photo.classList.add("menu-item-enlarged");
-// 	})
-// })
-
-Array.prototype.forEach.call(menuItemContainers, function(photo){
+Array.prototype.forEach.call(menuItems, function(photo, index){
 	photo.addEventListener("mouseenter", function(){
-		photo.classList.add("menu-item-overlay");
+		photo.classList.add("menu-item-shadow");
+		setTimeout(function(){menuItemTextDivs[index].style.display = "none"}, 800);
+
 	})
 	photo.addEventListener("mouseleave", function(){
-		photo.classList.remove("menu-item-overlay");
+		photo.classList.remove("menu-item-shadow");
+		setTimeout(function(){ menuItemTextDivs[index].style.display = "block"}, 800);
 	})
 })

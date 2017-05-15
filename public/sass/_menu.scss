@@ -10,53 +10,96 @@ body{
 
 .menu-container{
 	margin: 0 auto;
+	font-family: $sans;
+}
+.menu-heading{
+	width: 100%;
+	text-align: center;
+	font-size: 52px;
+	margin: 10px;
+}
+.menu-type-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.menu-type{
+	padding: 8px;
+}
+.menu-section-title{
+	font-size: 35px;
+	margin: 0;
+}
+.menu-section-links{
+	font-size: 20px;
+	margin-top: 10px;
+}
+.menu-type-container a{
+	height: 50px;
 }
 
 .menu-item{
+	margin: 10px;
 	height: 400px;
-	width: 250px;
+	width: 300px;
 	background-size: cover;
+	transition: all 1s;
 }
 
 .menu-item-container{
 	margin: 2px auto;
-	transition: all 1s;
+	// transition: all 1s;
 }
 
-.menu-item-overlay{
+.menu-item-shadow{
+	box-shadow: 10px 20px 25px 0px black;	
+}
+
+.menu-item-text-div{
 	background-color: lightgrey;
-	opacity: 0.8;
-	box-shadow: 10px 20px 25px 0 black;
+	opacity: 0.7;
+	padding: 15px;
+	height: 370px;
+	text-align: center;
 }
 
 .menu-item-text{
-	text-align: center;
+	font-size: 18px;
+	position: relative;
+	top: 130px;
+	text-shadow: 1px 1px white;
 }
-.menu-item-text p{
+
+.menu-item-title{
+	position: relative;
 	margin: 0;
 	font-size: 28px;
-	position: relative;
-	top: 160px;
+	top: 100px;
 	text-shadow: 2px 2px white;
-
-
 }
+
 
 .menu-item1{
 	background-image: url('/images/mussels.jpg');
+	background-position-x: -100px;
 }
 .menu-item2{
 	background-image: url('/images/lasagna.jpg');
+	background-position-x: -50px;
 }
 .menu-item3{
 	background-image: url('/images/crostini.jpg');
+	background-position-x: -93px;
+
 }
 .menu-item4{
 	background-image: url('/images/antipasto.jpg');
+	background-position-x: -60px;
 }
 .menu-item5{
 	background-image: url('/images/ravioli.jpg');
 }
 .menu-item6{
 	background-image: url('/images/seafood.jpg');
+	background-position-x: -62px;
 }
