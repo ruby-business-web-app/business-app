@@ -43,10 +43,9 @@ end
 post '/contact' do
 
 	@from = Email.new(email: params[:from_email])
-	@to = Email.new(email: params[:to_email])
 	@subject = params[:subject]
 	@content = Content.new(type: 'text/plain', value: params[:content])
-	@mail = Mail.new(@from, @subject, @to, @content)
+	@mail = Mail.new(@from, @subject, @content)
 
 	
 	sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
