@@ -1,0 +1,21 @@
+.contact-main{
+	height: 500px;
+	width: 100%;
+	text-align: center;
+}
+.from-email-input, .to-email-input, .subject-input,.content-input, .buttonforcontact{
+		display: flexbox;
+		justify-content: space-around;
+		margin-top: 10px;
+}
+.content-input{
+	width: 800px;
+	min-width: 100px;
+	height: 275px;
+}
+
+.from-output, .subject-output, .content-output {
+	color: white;
+	font-size: 40px;
+	font-family: $sans,
+}
