@@ -1,4 +1,6 @@
 require 'sinatra'
+require 'sendgrid-ruby'
+include SendGrid
 
 
 require 'sendgrid-ruby'
@@ -35,10 +37,11 @@ get '/contact' do
 end
 
 post '/contact' do
-	from = Email.new(email: 'test@example.com')
-	to = Email.new(email: 'test@example.com')
-	subject = 'Sending with SendGrid is Fun'
-	content = Content.new(type: 'text/plain', value: 'and easy to do anywhere, even with Ruby')
+
+	from = Email.new(email: params[:from_email])
+	to = Email.new(email: params[:to_email])
+	subject = params[:subject]
+	content = Content.new(type: 'text/plain', value: params[:content])
 	mail = Mail.new(from, subject, to, content)
 
 	sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
@@ -47,4 +50,3 @@ post '/contact' do
 	puts response.body
 	puts response.headers
 end
-
