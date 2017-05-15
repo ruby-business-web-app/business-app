@@ -16,8 +16,14 @@
 }
 
 .index-photo {
-	height: 100px;
-	width: 15%;
 	background-size: cover;
 	margin: 15px 0;
+}
+.vert-photo{
+	height: 400px;
+	width: 270px;
+}
+.horiz-photo{
+	width: 400px;
+	height: 270px;
 }
