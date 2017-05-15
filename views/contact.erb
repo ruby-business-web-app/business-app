@@ -7,3 +7,9 @@
 	<input type="text" name="content">
 	<input type="submit" name="send" placeholder="Send">
 </form>
+<% if @mail %>
+	<div><%= @from.email  %></div>
+	<div><%= @to.email  %></div>
+	<div> <%= @mail.subject %> </div>
+	<div><%= @content.value %></div>
+<% end %>
