@@ -1,14 +1,10 @@
-body{
-	background-color: brown;
-}
-
 .flex{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-.menu-container{
+.menu-container {
 	margin: 0 auto;
 	font-family: $sans;
 }
