@@ -1,4 +1,23 @@
+@import 'photopage';
+
 .index-container {
 	margin: 25px;
-	
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.index-content {
+	width: 100%;
+}
+
+.byphoto {
+	width: 80%;
+	margin: 15px;
+}
+
+.index-photo {
+	height: 100px;
+	width: 15%;
+	background-size: cover;
+	margin: 15px 0;
 }
