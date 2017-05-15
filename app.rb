@@ -10,24 +10,28 @@ end
 get '/photopage' do 
 	@heading = "hero"
 	@page_type = "withsmall"
+	@nav_script_type = "navscripts.js"
 	erb :photopage
 end
 
 get '/' do
 	@heading = "index-hero"
 	@page_type = "withbig"
+	@nav_script_type = "indexnavscripts.js"
 	erb :index
 end
 
 get '/menu' do
 	@heading = "hero"
 	@page_type = "withsmall"
+	@nav_script_type = "navscripts.js"
 	erb :menu
 end
 
 get '/contact' do
 	@heading = "hero"
 	@page_type = "withsmall"
+	@nav_script_type = "navscripts.js"
 	erb :contact
 end
 

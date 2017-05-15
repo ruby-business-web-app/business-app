@@ -2,19 +2,21 @@
 	background-image: url("/images/header.jpeg");
 	background-size: 100%;
 	background-position: bottom;
-	position: fixed;
 	top: 0;
 	z-index: -3;
 	width: 100%;
+	vertical-align: middle;
+	position: fixed;
 }
 
 .hero {
 	height: 100px;
-	padding-bottom: 20px;
+	line-height: 100px;
 }
 
 .index-hero {
 	height: 300px;
+	line-height: 300px;
 }
 
 .hero h1, .index-hero h1 {
@@ -22,9 +24,6 @@
 	font-weight: normal;
 	font-size: 75px;
 	margin: 0;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 .hero, .index-hero, .navigation {
@@ -58,4 +57,11 @@
 .navigation li {
 	display: inline;
 	margin: 0 10px;
+}
+
+.sticky-nav {
+	position: fixed;
+	top: 0;
+	z-index: 4;
+	width: 100%;
 }
