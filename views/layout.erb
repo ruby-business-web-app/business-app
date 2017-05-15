@@ -5,14 +5,25 @@
 	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Yanone+Kaffeesatz" rel="stylesheet">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 </head>
 <body>
-	<div class="<%= "#{@heading}" %>"><h1>Little Italy</h1></div>
-
-	<div class="<%= "#{@page_type}" %>"><div class="navigation"><ul><a href="/"><li>Home</li></a><li>|</li><a href="/menu"><li>Menu</li></a><li>|</li><a href="/photopage"><li>Photos</li></a><li>|</li><a href="/contact"><li>Contact</li></a></ul></div>
+	<div class="<%= "#{@heading}" %>">
+		<h1>Little Italy</h1>
+	</div>
+	<div class="<%= "#{@page_type}" %>">
+		<div class="navigation">
+			<ul>
+				<a href="/"><li>Home</li></a>
+				<li>|</li>
+				<a href="/menu"><li>Menu</li></a>
+				<li>|</li>
+				<a href="/photopage"><li>Photos</li></a>
+				<li>|</li>
+				<a href="/contact"><li>Contact</li></a>
+			</ul>
+		</div>
 
 	<%= yield %>
 
