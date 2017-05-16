@@ -1,76 +1,391 @@
-/*
-Error: Invalid CSS after "...und-size: cover": expected "{", was ";"
-        on line 21 of sass/_index.scss
-        from line 6 of sass/styles.scss
+.gal-main-image-container {
+  text-align: center;
+  margin: 10px; }
 
-16: 	padding: 10px;
-17: }
-18: 
-19: .index-photo {
-20: <<<<<<< HEAD
-21: 	background-size: cover;
-22: 	margin: 15px;
-23: 	display: inline;
-24: 	height: 300px;
-25: 	width: 390px;
-26: }
+.gal-title {
+  font-family: "Baloo", cursive;
+  font-size: 42px;
+  padding: 20px; }
 
-Backtrace:
-sass/_index.scss:21
-sass/styles.scss:6
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Users/michael/.rvm/gems/ruby-2.4.1/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...und-size: cover\": expected \"{\", was \";\"\A         on line 21 of sass/_index.scss\A         from line 6 of sass/styles.scss\A \A 16: 	padding: 10px;\A 17: }\A 18: \A 19: .index-photo {\A 20: <<<<<<< HEAD\A 21: 	background-size: cover;\A 22: 	margin: 15px;\A 23: 	display: inline;\A 24: 	height: 300px;\A 25: 	width: 390px;\A 26: }"; }
+.gal-border-of-content {
+  height: 1000px;
+  padding: 20px; }
+
+.outerdiv {
+  height: 25%;
+  width: 25%;
+  min-width: 300px;
+  min-height: 100px;
+  display: inline-block;
+  position: relative; }
+
+.gal-image-text {
+  position: absolute;
+  visibility: hidden;
+  color: white;
+  font-size: 42px; }
+
+.galimage {
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  border-radius: 5%;
+  transition: all 1s;
+  top: 0px;
+  left: 0px; }
+  .galimage:hover {
+    position: absolute;
+    z-index: 1;
+    height: 150%;
+    width: 150%;
+    top: -60px;
+    left: -125px; }
+
+.galimage:hover .gal-image-text {
+  display: inline;
+  visibility: visible; }
+
+.firstimage {
+  background-image: url("https://static1.squarespace.com/static/54c03750e4b0e9f0be75766a/54c03f88e4b0d04c1338b200/54c04a81e4b060be3ca79136/1421888135179/Love+and+Salt+Cavatappi+-+High+resolution.jpg?format=1500w"); }
+
+.secondimage {
+  background-image: url("http://vista-arrowhead.figure8solutions.com/wp-content/uploads/2014/09/bolo-not-high-res.jpg"); }
+
+.thirdimage {
+  background-image: url("https://foodimentaryguy.files.wordpress.com/2015/02/www-huffingtonpost-com.jpg"); }
+
+.fourthimage {
+  background-image: url("http://www.chunoa.com/wp-content/uploads/2017/02/High-Resolution-Italian-Food-Wallpaper.jpg"); }
+
+.fifthimage {
+  background-image: url("http://iloverustico.com/wp-content/uploads/2014/05/pizza-food-image.jpg"); }
+
+.sixthimage {
+  background-image: url("http://www.masralarabia.com/images/news/4eeec976a0820d2157e2793818914dbb.jpg"); }
+
+.seventhimage {
+  background-image: url("https://images.food52.com/aaCL5BEpM-qvWWBBK4tki6mnmsw=/fit-in/1200x1200/bd467b9d-f8bb-42d6-a766-d2b5b419756b--Headley_Brooks_e_Yunhee_Kim_For_Blads.jpg"); }
+
+.eigthimage {
+  background-image: url("http://mainewoodheat.com/cms/wp-content/uploads/2011/06/lobster_pizza2.jpg"); }
+
+.hero, .index-hero {
+  background-image: url("/images/header.jpeg");
+  background-size: 100%;
+  background-position: bottom;
+  top: 0;
+  z-index: -3;
+  width: 100%;
+  max-width: 1200px;
+  vertical-align: middle;
+  position: fixed; }
+
+.hero {
+  height: 100px;
+  line-height: 100px; }
+
+.index-hero {
+  height: 300px;
+  line-height: 300px; }
+
+.hero h1, .index-hero h1 {
+  font-family: "Lobster", cursive;
+  font-weight: normal;
+  font-size: 75px;
+  margin: 0; }
+
+.hero, .index-hero, .navigation {
+  color: white;
+  text-align: center; }
+
+.navigation {
+  background-color: #138896;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  padding: 10px 0 5px 0;
+  font-size: 20px;
+  border-bottom: 3px solid black; }
+
+.navigation a {
+  text-decoration: none;
+  color: white; }
+
+.navigation a:hover {
+  color: #ffea00; }
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.navigation li {
+  display: inline;
+  margin: 0 10px; }
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  width: 100%; }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.menu-container {
+  margin: 0 auto;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
+
+.menu-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 52px;
+  margin: 10px; }
+
+.menu-type-container {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.menu-type {
+  padding: 8px; }
+
+.menu-section-title {
+  font-size: 35px;
+  margin: 0; }
+
+.menu-section-links {
+  font-size: 20px;
+  margin-top: 10px; }
+
+.menu-type-container a {
+  height: 50px; }
+
+.menu-item {
+  margin: 10px;
+  height: 400px;
+  width: 300px;
+  background-size: cover;
+  transition: all 1s; }
+
+.menu-item-container {
+  margin: 2px auto; }
+
+.menu-item-shadow {
+  box-shadow: 10px 20px 25px 0px black; }
+
+.menu-item-text-div {
+  background-color: lightgrey;
+  opacity: 0.7;
+  padding: 15px;
+  height: 370px;
+  text-align: center; }
+
+.menu-item-text {
+  font-size: 18px;
+  position: relative;
+  top: 130px;
+  text-shadow: 1px 1px white; }
+
+.menu-item-title {
+  position: relative;
+  margin: 0;
+  font-size: 28px;
+  top: 100px;
+  text-shadow: 2px 2px white; }
+
+.menu-item1 {
+  background-image: url("/images/mussels.jpg");
+  background-position-x: -100px; }
+
+.menu-item2 {
+  background-image: url("/images/lasagna.jpg");
+  background-position-x: -50px; }
+
+.menu-item3 {
+  background-image: url("/images/crostini.jpg");
+  background-position-x: -93px; }
+
+.menu-item4 {
+  background-image: url("/images/antipasto.jpg");
+  background-position-x: -60px; }
+
+.menu-item5 {
+  background-image: url("/images/ravioli.jpg"); }
+
+.menu-item6 {
+  background-image: url("/images/seafood.jpg");
+  background-position-x: -62px; }
+
+.footer {
+  font-family: sans-serif;
+  text-align: center;
+  border-top: 3px solid black;
+  margin: 15px 0; }
+
+.ftinfo-box {
+  display: inline-block;
+  margin: 0 15px; }
+
+.footer-title {
+  font-family: "Baloo", cursive; }
+
+.footer-info {
+  font-variant: small-caps;
+  font-size: 10px; }
+
+.footer-punch {
+  font-style: italic;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 13px; }
+
+.ft-breaker, .ftinfo-box {
+  display: inline-block; }
+
+.gal-main-image-container {
+  text-align: center;
+  margin: 10px; }
+
+.gal-title {
+  font-family: "Baloo", cursive;
+  font-size: 42px;
+  padding: 20px; }
+
+.gal-border-of-content {
+  height: 1000px;
+  padding: 20px; }
+
+.outerdiv {
+  height: 25%;
+  width: 25%;
+  min-width: 300px;
+  min-height: 100px;
+  display: inline-block;
+  position: relative; }
+
+.gal-image-text {
+  position: absolute;
+  visibility: hidden;
+  color: white;
+  font-size: 42px; }
+
+.galimage {
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  border-radius: 5%;
+  transition: all 1s;
+  top: 0px;
+  left: 0px; }
+  .galimage:hover {
+    position: absolute;
+    z-index: 1;
+    height: 150%;
+    width: 150%;
+    top: -60px;
+    left: -125px; }
+
+.galimage:hover .gal-image-text {
+  display: inline;
+  visibility: visible; }
+
+.firstimage {
+  background-image: url("https://static1.squarespace.com/static/54c03750e4b0e9f0be75766a/54c03f88e4b0d04c1338b200/54c04a81e4b060be3ca79136/1421888135179/Love+and+Salt+Cavatappi+-+High+resolution.jpg?format=1500w"); }
+
+.secondimage {
+  background-image: url("http://vista-arrowhead.figure8solutions.com/wp-content/uploads/2014/09/bolo-not-high-res.jpg"); }
+
+.thirdimage {
+  background-image: url("https://foodimentaryguy.files.wordpress.com/2015/02/www-huffingtonpost-com.jpg"); }
+
+.fourthimage {
+  background-image: url("http://www.chunoa.com/wp-content/uploads/2017/02/High-Resolution-Italian-Food-Wallpaper.jpg"); }
+
+.fifthimage {
+  background-image: url("http://iloverustico.com/wp-content/uploads/2014/05/pizza-food-image.jpg"); }
+
+.sixthimage {
+  background-image: url("http://www.masralarabia.com/images/news/4eeec976a0820d2157e2793818914dbb.jpg"); }
+
+.seventhimage {
+  background-image: url("https://images.food52.com/aaCL5BEpM-qvWWBBK4tki6mnmsw=/fit-in/1200x1200/bd467b9d-f8bb-42d6-a766-d2b5b419756b--Headley_Brooks_e_Yunhee_Kim_For_Blads.jpg"); }
+
+.eigthimage {
+  background-image: url("http://mainewoodheat.com/cms/wp-content/uploads/2011/06/lobster_pizza2.jpg"); }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.index-container {
+  margin: 25px; }
+
+.index-content {
+  padding: 10px; }
+
+.index-photo {
+  background-size: cover;
+  margin: 15px;
+  display: inline;
+  height: 300px;
+  width: 390px; }
+
+.chef-photo {
+  float: right; }
+
+.rest-photo {
+  float: left; }
+
+.clearfix {
+  clear: both; }
+
+.contact-main {
+  height: 500px;
+  width: 100%;
+  text-align: center; }
+
+.from-email-input, .to-email-input, .subject-input, .content-input, .buttonforcontact {
+  display: flexbox;
+  justify-content: space-around;
+  margin-top: 10px; }
+
+.content-input {
+  width: 800px;
+  min-width: 100px;
+  height: 275px; }
+
+.from-output, .subject-output, .content-output {
+  color: white;
+  font-size: 40px;
+  font-family: "Yanone Kaffeesatz", sans-serif; }
+
+body {
+  background-color: #bfbc98;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: sans-serif; }
+
+a {
+  color: #b08000;
+  text-decoration: none; }
+
+a:hover {
+  color: #ffea00; }
+
+.withsmall {
+  margin-top: 100px; }
+
+.withbig {
+  margin-top: 300px; }
+
+.withsmall, .withbig {
+  background-color: #bfbc98; }
+
+.sticky-page-holder {
+  padding-top: 50px; }
+
+/*# sourceMappingURL=styles.css.map */
