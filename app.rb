@@ -2,12 +2,6 @@ require 'sinatra'
 require 'sendgrid-ruby'
 include SendGrid
 
-
-require 'sendgrid-ruby'
-
-include SendGrid
-
-
 get '/layout' do
 	erb :layout
 end

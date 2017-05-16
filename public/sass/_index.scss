@@ -1,29 +1,34 @@
 @import 'photopage';
 
+.float-right{
+	float: right;
+}
+
+.float-left{
+	float: left;
+}
+
 .index-container {
 	margin: 25px;
-	display: flex;
-	flex-wrap: wrap;
 }
 
 .index-content {
-	width: 100%;
-}
-
-.byphoto {
-	width: 80%;
-	margin: 15px;
+	padding: 10px;
 }
 
 .index-photo {
 	background-size: cover;
-	margin: 15px 0;
+	margin: 15px;
+	display: inline;
+	height: 300px;
+	width: 390px;
 }
-.vert-photo{
-	height: 400px;
-	width: 270px;
+.chef-photo{
+	float: right;
 }
-.horiz-photo{
-	width: 400px;
-	height: 270px;
+.rest-photo{
+	float: left;
+}
+.clearfix{
+	clear: both;
 }
